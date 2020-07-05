@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <!--CSS Styling-->
+    <link rel="stylesheet" href="style.css"/>
+    <!--Boostrap link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!--Timer and link to score page-->
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <a id="timer"></a>
+    </nav>
+
+    <!--Main Container-->
+    <main class="container">
+
+        <!--Quiz Page-->
+        <div class="quizPage">
+            <h1 id="begin">Coding Quiz</h1>
+            <p>Complete the following coding questions within 80 seconds.</p>
+    
+            <button id="submitButton" class="btn btn-outline-primary" type="button" >Begin Quiz</button>
+          </div>
+
+          <!--Quiz Questions-->
+          <div id="questionsPage">
+              <h2 id="questionsHeader"></h2>
+
+              <!--user selects answer response -->
+              <div id="answerReply"></div>
+
+              <ul>
+                  <li><button type="button" class="btn btn-outline-primary questionButton" id="one"></button></li>
+                  <li><button type="button" class="btn btn-outline-primary questionButton" id="two"></button></li>
+                  <li><button type="button" class="btn btn-outline-primary questionButton" id="three"></button></li>
+                  <li><button type="button" class="btn btn-outline-primary questionButton" id="four"></button></li>
+                  <li><button id="correct"></li>
+              </ul>
+            </div>
+
+          <!--Quiz Final Score-->
+          <div class="finalResultPage">
+            <h2 id="Completed">Quiz Completed!</h2>
+            <div id="finalResultIs"></div>
+            <a href="index.html"><button class ="btn btn-outline-primary" type="button">Go Back</button></a>
+        </div>
+    </main>
+
+<!--JavaScript page link-->
+<script src="script.js" type="text/javascript"></script>
+</body>
+</html>
